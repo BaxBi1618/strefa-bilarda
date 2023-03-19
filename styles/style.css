@@ -1,0 +1,294 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('fonts/Pacifico-Regular.ttf') format('truetype');
+}
+*{
+    box-sizing: border-box;
+}
+html,body{
+    background-color: #012a4a;
+    margin: 0;
+    padding: 0;
+}
+/*content*/
+#content h1{
+    text-align: center;
+}
+#content{
+    font-size: 30px;
+    padding: 40px;
+}
+
+
+/*Section-header file*/
+#header{
+    background-color: #012a4a;
+    color: wheat;
+    padding: 20px;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+#logo{
+    background-image: url('images/logo-png.png');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 195px;
+    height: 195px;
+    margin: 10px;
+}
+#name h1{
+    font-family:'Pacifico';
+    font-size: 100px;
+    margin: 0;
+}
+#name{
+    margin: 0 auto 0 auto;
+}
+
+/*Section-nav menu*/
+nav{
+    top: 0;
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    background-color: #e05263;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    position: relative;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight:bolder;
+}
+
+nav a::after{
+    content: '';
+    left: 0;
+    bottom: -7px;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 6px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+nav a:hover::after{
+    transform: scaleX(1);
+}
+
+/*Section-content*/
+#content{
+    color: wheat;
+}
+
+/*Section-price-list*/
+#cennik{
+    
+    margin-bottom: 90px;
+}
+#prices{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+#title-price{
+    color: wheat;
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+}
+#title-price h1{
+    margin: 0;
+    border: #e05263 solid 5px;
+    border-radius: 40px;
+    width: 210px;
+    padding: 15px;
+    margin: 0 auto 0 auto;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+#billard-price,#snooker-price{
+    margin: 10px;
+    margin: 0 auto 0 auto;
+    min-width: 20%;
+}
+#billard-price td, th{
+    border: 5px solid #e05263;
+    color: wheat;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 88px;
+    text-align: center;
+}
+
+#snooker-price th{
+    border: 5px solid #e05263;
+    color: wheat;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 88px;
+    text-align: center;
+}
+#snooker-price td{
+    border: 5px solid #e05263;
+    color: wheat;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 132px;
+    text-align: center;
+}
+
+#billard-price th, #snooker-price th{
+    width: 40%;
+}
+/*Section-where to find us*/
+#whereToFind{
+    margin-bottom: 90px;
+}
+.line-where{
+    display: flex;
+    flex-wrap: wrap;
+}
+#map{
+    border: 3px solid #e05263;
+    width: 50%;
+    height: 300px;
+    min-width: 465px;
+    max-width: 1460px;
+    margin: 80px auto 0 auto;
+}
+#info-where,#entry-where{
+    color: wheat;
+    margin: 0 auto 0 auto;
+}
+#info-where h1{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+#info-where hr{
+    width: 350px;
+    color: wheat;
+    border: 4px wheat solid;
+    border-radius: 8px;
+}
+#info-where p{
+    text-align: center;
+    font-size: 50px;
+}
+
+#entry-where h1{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 68px;
+    text-align: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+#entry-img-where{
+    border: 3px solid #e05263;
+    height: 400px;
+    width: 800px;
+    background-image: url('images/wejscie.png');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin: 80px auto 0 auto;
+}
+#entry-where hr{
+    width: 700px;
+    color: wheat;
+    border: 4px wheat solid;
+    border-radius: 8px;
+}
+#up-hr{
+    margin-top: 200px;
+}
+
+/*Section-gallery*/
+#gallery{
+    margin-bottom: 90px;
+    margin-top: 30px;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+#gallery img{
+    border: #e05263 5px solid;
+    border-radius: 40px;
+}
+/*Section-footer*/
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #e05263;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Section-Scrol Bar*/
+
+html{
+    /* Foreground, Background */
+    scrollbar-color: red;
+  }
+html::-webkit-scrollbar {
+    width: 10px; /* Mostly for vertical scrollbars */
+    height: 10px; /* Mostly for horizontal scrollbars */
+  }
+html::-webkit-scrollbar-thumb { /* Foreground */
+    background: red;
+  }
+html::-webkit-scrollbar-track { /* Background */
+    background: red;
+  }
+
+@media only screen and (max-width: 695px) {
+    #logo{
+        display: none;
+    }
+    #name h1{
+        font-size: 60px;
+        text-align: center;
+    }
+    #header{
+        height: auto;
+    }
+    nav a{
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    #logo{
+        display: none;
+    }
+}
